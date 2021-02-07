@@ -1,1 +1,3 @@
-type If<C, T, F> = any
+// solved
+
+type If<C, T, F> = C extends true ? T : F;

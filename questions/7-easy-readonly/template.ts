@@ -1,1 +1,5 @@
-type MyReadonly<T> = any
+// solved
+
+type MyReadonly<T> = {
+  readonly [P in keyof T]: T[P]
+}

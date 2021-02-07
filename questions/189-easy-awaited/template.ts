@@ -1,1 +1,3 @@
-type Awaited = any
+// solved
+
+type Awaited<T> = T extends Promise<infer K> ? K : never;

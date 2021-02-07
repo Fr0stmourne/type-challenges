@@ -1,1 +1,3 @@
-type Concat<T, U> = any
+// solved
+
+type Concat<T extends any[], U extends any[]> = [...T, ...U];

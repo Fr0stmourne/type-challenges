@@ -1,1 +1,5 @@
-type TupleToObject<T extends readonly any[]> = any
+// solved
+
+type TupleToObject<T extends readonly any[]> = {
+  [P in T[number]]: P
+}
