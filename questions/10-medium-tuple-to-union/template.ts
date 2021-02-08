@@ -1,1 +1,3 @@
-type TupleToUnion<T> = any
+// solved
+
+type TupleToUnion<T> = T extends [...infer S] ? S[number] : never
